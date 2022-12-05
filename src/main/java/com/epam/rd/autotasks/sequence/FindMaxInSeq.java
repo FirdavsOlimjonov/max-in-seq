@@ -9,7 +9,7 @@ public class FindMaxInSeq {
 
         do {
             num = scanner.nextInt();
-            maxNum = Math.max(maxNum, num);
+            maxNum = num!=0?Math.max(maxNum, num):maxNum;
         }while (num!=0);
 
         return maxNum;
